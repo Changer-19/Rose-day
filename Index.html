@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose Day Special</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="heart-container"></div>
+
+    <div class="container">
+        <div id="screen1" class="card">
+            <div class="character">🐼🌹</div>
+            <p>GROWING YOUR ROSE...</p>
+        </div>
+
+        <div id="screen2" class="card hidden">
+            <div class="character">🐼</div>
+            <h3>Wait!</h3>
+            <p>Who should I give this rose to?</p>
+            <input type="text" id="nameInput" placeholder="Enter name...">
+            <p id="error" class="error-msg"></p>
+            <button onclick="checkName()">Give Rose 🌹</button>
+        </div>
+
+        <div id="screen3" class="card hidden">
+            <div class="character">🌹</div>
+            <h2 id="displayName"></h2>
+            <p>Will you accept this rose and be my favorite person?</p>
+            <div class="btn-group" id="btnGroup">
+                <button id="yesBtn" onclick="showFinal()">Yes, I will! ❤️</button>
+                <button id="noBtn" onclick="handleNoClick()">No</button>
+            </div>
+        </div>
+
+        <div id="screen4" class="card hidden">
+            <div class="character">Your rose🐼🌹</div>
+            <h2>Happy Rose Day, Jeeya!</h2>
+            <p>You are my favourite person ever🙈💗.</p>
+            <div class="note">
+                "Just like this rose, my feelings for you grow more beautiful every single day. Thank you for being just the way you are!!!" ❤️✨
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
